@@ -399,19 +399,20 @@ def restaurant():
                     pass
                 else:
                     print("Wrong Choice!!")
-            print("Total Bill: ",r)
+                    print("Total Bill: ",r)
         
-            r = r+rc.pop(n)
-            rc.append(r)
+                    r = r+rc.pop(n)
+                    rc.append(r)
+                    
         else:
             pass
-    if f == 0:
-        print("Invalid Customer ID")
-    n = int(input("0-BACK\n ->"))
-    if n == 0:
-        Home()
-    else:
-        exit()
+        if f == 0:
+            print("Invalid Customer ID")
+            n = int(input("0-BACK\n ->"))
+        if n == 0:
+            Home()
+        else:
+            exit()
 
 # PAYMENT FUNCTION
 def Payment():
